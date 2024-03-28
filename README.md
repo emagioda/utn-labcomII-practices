@@ -1,2 +1,2 @@
-# -utn-labcomII-practices
+# utn-labcomII-practices
 Laboratorio de Computacion II - UTN
