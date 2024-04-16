@@ -1,0 +1,108 @@
+<!-- 
+En un archivo aparte, llamado perfil.html, crear la estructura básica de un documento HTML que servirá de página de perfil y datos personales.
+La misma debe incluir:
+* Un título (h1) descriptivo de la página.
+* Un formulario que agrupe la información personal que incluya:
+* Un campo de sólo lectura que tenga como valor “ESTUDIANTE”.
+* Un campo para el nombre completo.
+* Un campo para el email.
+* Un campo para la edad.
+* Un seleccionable para la nacionalidad.
+* Un seleccionable para la condición laboral. 
+    Llenar con 4 opciones: desempleado, en búsqueda laboral, trabajo part time, trabajo full time.
+En el mismo formulario agregar una sección que agrupe la información de gustos personales que incluya:
+* Un campo de texto para gustos musicales.
+* Un seleccionable de comidas preferidas.
+* Un botón para enviar el formulario.
+* Un checkbox para recordar los datos del usuario. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del Usuario</title>
+</head>
+
+<body>
+    <div>
+        <h1> Mi Perfil</h1>
+    </div>
+    <form action="#" method="post">
+        <!-- TIPO DE USUARIO -->
+        <input type="text" name="tipo_usuario" id="tipo_usuario" value="ESTUDIANTE" readonly>
+        <br><br>
+        <!-- NOMBRE -->
+        <label for="nombre">Nombre y Apellido:</label><br>
+        <input type="text" name="nombre" id="nombre">
+        <br><br>
+        <!-- EMAIL -->
+        <label for="email">Email:</label><br>
+        <input type="text" name="email" id="email">
+        <br><br>
+        <!-- EDAD -->
+        <label for="edad">Edad:</label><br>
+        <input type="text" name="edad" id="edad">
+        <br><br>
+        <!-- NACIONALIDAD -->
+        <div>
+            <label for="nacionalidad">Nacionalidad:</label><br>
+            <select name="nacionalidad" id="nacionalidad">
+                <option value="" selected disabled>Selecciona tu nacionalidad</option>
+                <option value="Argentina"> Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Chile">Chile</option>
+                <option value="España">España</option>
+                <option value="México">México</option>
+                <option value="Estados Unidos">Estados Unidos</option>
+                <option value="Francia">Francia</option>
+                <option value="Alemania">Alemania</option>
+                <option value="Italia">Italia</option>
+            </select>
+        </div>
+        <br>
+        <!-- CONDICIÓN LABORAL -->
+        <div>
+            <label for="laboral">Condición Laboral</label><br>
+            <select name="laboral" id="laboral">
+                <option value="" selected disabled>Selecciona tu condición laboral</option>
+                <option value="Desempleado">Desempleado</option>
+                <option value="En búsqueda laboral">En búsqueda laboral</option>
+                <option value="Trabajo part time">Trabajo part time</option>
+                <option value="Trabajo full time">Trabajo full time</option>
+            </select>
+        </div>
+        <div>
+            <h3>Gustos Personales</h3>
+        </div>
+        <label for="musicales">Gustos Musicales</label><br>
+        <input type="text" name="musicales" id="musicales">
+        <br><br>
+        <div>
+            <label for="comida_preferida">Comida Preferida:</label><br>
+            <select name="comida_preferida" id="comida_preferida">
+                <option value="" selected disabled>Selecciona tu comida preferida</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Hamburguesa">Hamburguesa</option>
+                <option value="Asado">Pollo asado</option>
+                <option value="Sushi">Sushi</option>
+                <option value="Tacos">Tacos</option>
+                <option value="Pasta">Pasta</option>
+                <option value="Sopa">Sopa</option>
+            </select>
+        </div>
+        <br>
+        <label for="recordar"></label>
+        <input type="checkbox" name="recordar" id="recordar">Recordar datos
+        <br><br>
+        <input type="submit" name="enviar" id="enviar">
+
+    </form>
+</body>
+
+</html>
+
+</html>
