@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Contacto</h1>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Navegación / contenedor izquierdo -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="multimedia.html">Galería</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Contenido Principal -->
+        <main>
+            <p>
+                <b>Ubicación:</b> <br>
+                San Martín 1234
+                <br><br>
+                <b>Teléfono:</b> <br>
+                3413987456
+                <br><br>
+                <b>Atención al público:</b> <br>
+                Lunes a Viernes de 17:00 a 21:00hs <i>(Showroom luces, sonido y video)</i>
+                <br>
+            </p>
+
+            <h2>Envianos tu consulta</h2>
+            <form action="#" method="post">
+                <table>
+                    <tr>
+                        <td><label for="nombre">Nombre:</label></td>
+                        <td><input type="text" id="nombre" name="nombre" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="telefono">Teléfono:</label></td>
+                        <td><input type="text" name="telefono" id="telefono"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="color">Decoración:</label></td>
+                        <td><input type="color" name="color" id="color"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="comentario">Mensaje:</label></td>
+                        <td><textarea id="comentario" name="comentario" rows="4" minlength="10" required></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+        <!-- Contenedor secundario / derecho -->
+        <div class="right">
+            <h2>Sobre Nosotros</h2>
+            <p><b>Estrella Dorada:</b> <i>Donde los eventos se vuelven brillantes.</i>
+                <br>
+                Desde bodas deslumbrantes hasta fiestas
+                inolvidables, nuestro salón ofrece elegancia y atención personalizada para cada ocasión.
+            </p>
+        </div>
+    </div>
+
+    <!-- Pie de Página-->
+    <footer>
+        <p>© 2024 Estrella Dorada SRL</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Bienvenidos a la Página de Multimedia</h1>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Navegación / contenedor izquierdo -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="multimedia.html">Galería</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Contenido Principal -->
+        <main>
+            <section>
+                <h2>Salón Estrella Dorada</h2>
+                <img src="multimedia/salon-3.jpg" alt="Imagen" width="300" height="200">
+                <img src="multimedia/salon-1.jpg" alt="Imagen" width="300" height="200">
+                <img src="multimedia/salon-2.jpg" alt="Imagen" width="300" height="200">
+            </section>
+            <section>
+                <h2>Video</h2>
+                <video controls width="300">
+                    <source src="multimedia/Video-1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+            <section>
+                <h2>DJ's Exclusivos</h2>
+                <audio controls>
+                    <source src="multimedia/MixDJ.mp3" type="audio/mpeg">
+                </audio>
+            </section>
+            <section>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gBQcsiQ5Cms?si=oX1zqwbyX3rr1Si4"
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+        </main>
+        <!-- Contenedor secundario / derecho -->
+        <div class="right">
+            <h2>Sobre Nosotros</h2>
+            <p><b>Estrella Dorada:</b> <i>Donde los eventos se vuelven brillantes.</i>
+                <br>
+                Desde bodas deslumbrantes hasta fiestas
+                inolvidables, nuestro salón ofrece elegancia y atención personalizada para cada ocasión.
+            </p>
+        </div>
+    </div>
+
+    <!-- Pie de Página-->
+    <footer>
+        <p>© 2024 Estrella Dorada SRL</p>
+    </footer>
+</body>
+
+</html>
