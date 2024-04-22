@@ -1,0 +1,42 @@
+.main{
+    display: flex;
+    gap: 2px    ;
+    min-height: 100vh;
+    font-family: sans-serif;
+
+}
+.sidebar,
+.contenido{
+    height: 100vh;
+    padding: 12px 24px;
+}
+.sidebar{
+    background-color: rgb(133, 215, 239);
+    flex: 1;
+}
+
+.contenido{
+    background-color: rgb(193, 219, 210);
+    flex: 8;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: space-between;
+    flex-basis: 100%;
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    border-bottom: 1px solid gray;
+}
+
+li a{
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+    width: 100%;
+}
